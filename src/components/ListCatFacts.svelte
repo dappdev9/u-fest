@@ -11,9 +11,6 @@
   ).pipe(startWith([]));
 </script>
 <style>
-  .flex-row {
-    justify-content: left;
-  }
 </style>
 <div class="flex-column max-800">
   <h3>Firestore Collection "catfacts"</h3>
