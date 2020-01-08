@@ -12,16 +12,23 @@
     await firebase.auth().signOut();
   };
 </script>
-<div class="flex-column">
+
+<style>
+  h1 {
+    @apply bg-black text-white;
+  }
+</style>
+
+<div>
   {#if $user}
   <h1>
     Welcome {$user.email}
-    <button className="myButton" on:click="{signOut}">
+    <button class="bg-teal-500 hover:bg-teal-600 focus:outline-none focus:shadow-outline ..." on:click="{signOut}">
       4. Sign Out
     </button>
   </h1>
   {:else}
-  <button className="myButton" on:click="{signIn}">
+  <button class="bg-teal-500 hover:bg-teal-600 focus:outline-none focus:shadow-outline ..." on:click="{signIn}">
     1. Sign In
   </button>
   {/if}

@@ -14,7 +14,8 @@
     }
   };
 </script>
-<div class="flex-column">
+
+<div>
   {#if $user}
   <button className="myButton" on:click="{addCatFact}">
     2. Add Cat Fact

@@ -10,10 +10,13 @@
     'catFactId'
   ).pipe(startWith([]));
 </script>
+
 <style>
+  
 </style>
-<div class="flex-column max-800">
-  <h3>Firestore Collection "catfacts"</h3>
+
+<div>
+  <h3 class="italic text-red-400">Firestore Collection "catfacts"</h3>
   <div>
     {#each $catFacts as catFact}
     <div>

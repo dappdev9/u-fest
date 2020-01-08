@@ -1,35 +1,30 @@
 <script>
-	import Instructions from './components/Instructions.svelte';
-	import SignIn from './components/SignIn.svelte';
-	import AddCat from './components/AddCat.svelte';
-	import ListCatFacts from './components/ListCatFacts.svelte';
-	import {loggedIn$} from './Firebase.js'
+  import Tailwindcss from "./Tailwindcss.svelte";
+  import Instructions from "./components/Instructions.svelte";
+  import SignIn from "./components/SignIn.svelte";
+  import AddCat from "./components/AddCat.svelte";
+  import ListCatFacts from "./components/ListCatFacts.svelte";
+  import { loggedIn$ } from "./Firebase.js";
 
-	/* Make something more observable */
-	const user = loggedIn$;
+  /* Make something more observable */
+  const user = loggedIn$;
 </script>
-<!-- <style>
-:global(div.flex-row){
-	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
-}
-:global(div.flex-column){
-	display: flex;
-	justify-content: center;
-	flex-flow: column;
-}
-.max-800{
-	max-width: 800px;
-}
-</style> -->
- <div class="flex-row">
- <div class="flex-column">
-	 <Instructions />
-	 <SignIn user={user} />
-	 <div>
-		<AddCat user={user} />
-		<ListCatFacts user={user} />
-	  </div>
- </div>
+
+<style>
+
+</style>
+
+<Tailwindcss />
+
+<div>
+  <div>
+
+    <Instructions />
+    <SignIn {user} />
+    <div>
+      <AddCat {user} />
+      <ListCatFacts {user} />
+    </div>
+
+  </div>
 </div>

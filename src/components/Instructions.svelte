@@ -1,9 +1,8 @@
-<div class="flex-row">
+<div>
   <div>
     <img
       src="https://res.cloudinary.com/ajonp/image/upload/w_500/v1556553295/ajonp-ajonp-com/18-rxfire-svelte-cats/RxFire_Svelt.png"
-      alt="rxfire for cats"
-    />
+      alt="rxfire for cats" />
   </div>
   <div>
     <p>
