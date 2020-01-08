@@ -1,6 +1,6 @@
 <script>
 	import Instructions from './components/Instructions.svelte';
-	import SignIn from './components/Signin.svelte';
+	import SignIn from './components/SignIn.svelte';
 	import AddCat from './components/AddCat.svelte';
 	import ListCatFacts from './components/ListCatFacts.svelte';
 	import {loggedIn$} from './Firebase.js'
