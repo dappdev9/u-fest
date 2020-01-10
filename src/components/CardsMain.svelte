@@ -2,7 +2,7 @@
     export let title;
     export let foto;
     export let views;
-    export let paricipants;
+    export let participants;
     export let comments;
 </script>
 
@@ -18,7 +18,7 @@
         Views: {views}
         </div>
         <div>
-        Participants: {paricipants}
+        Participants: {participants}
         </div>
         <div>
         Comments: {comments}
