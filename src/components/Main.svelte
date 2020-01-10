@@ -17,7 +17,7 @@
 
 <div class="flex bg-gray-200 min-h-screen items-start justify-center">
   {#each $cardsMain as cardMain}
-    <div class="h-64">
+    <div class="h-200px">
       <!-- <CardsMain title={cardMain.title} foto={cardMain.foto} views={cardMain.views}/> -->
       <CardsMain {...cardMain}/>
     </div>
