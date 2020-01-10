@@ -19,7 +19,7 @@
 
 <div class="flex bg-gray-200 min-h-screen items-start justify-center">
   {#each $cardsMain as cardMain}
-    <div class="MainCard">
+    <div class="MainCard flex-auto">
       <CardsMain {...cardMain}/>
     </div>
   {/each}
