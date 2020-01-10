@@ -17,7 +17,7 @@
 
 <div class="flex flex-wrap bg-gray-200 min-h-screen items-center justify-center">
   {#each $cardsMain as cardMain}
-    <div>
+    <div class="flex-1">
       <!-- <CardsMain title={cardMain.title} foto={cardMain.foto} views={cardMain.views}/> -->
       <CardsMain {...cardMain}/>
     </div>
