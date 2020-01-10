@@ -14,9 +14,7 @@
 </script>
 
 <style>
-  h1 {
-    @apply bg-black text-white;
-  }
+
 </style>
 
 <div>
