@@ -19,7 +19,8 @@
 <div class="flex bg-gray-200 min-h-screen items-center justify-center">
   {#each $cardsMain as cardMain}
     <div>
-      <CardsMain title={cardMain.title} foto={cardMain.foto} views={cardMain.views}/>
+      <!-- <CardsMain title={cardMain.title} foto={cardMain.foto} views={cardMain.views}/> -->
+      <CardsMain {...cardMain}/>
     </div>
   {/each}
 </div>
