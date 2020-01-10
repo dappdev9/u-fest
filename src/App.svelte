@@ -16,7 +16,7 @@
 
 <Tailwindcss />
 
-<div>
+<div class="antialiased text-gray-900">
   <div>
 
     <Main />
