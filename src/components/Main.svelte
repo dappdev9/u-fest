@@ -17,9 +17,9 @@
 }
 </style>
 
-<div class="flex bg-gray-200 min-h-screen items-start justify-center">
+<div class="flex flex-wrap bg-gray-200 min-h-screen items-start justify-center">
   {#each $cardsMain as cardMain}
-    <div class="MainCard flex-1">
+    <div class="MainCard">
       <CardsMain {...cardMain}/>
     </div>
   {/each}
