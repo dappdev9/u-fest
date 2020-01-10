@@ -9,14 +9,13 @@
 
   const cardsMain = collectionData(cardsMainRef,"id").pipe(startWith([]));
 
-  console.log("cards: " + cardsMain);
 </script>
 
 <style>
 
 </style>
 
-<div class="flex bg-gray-200 min-h-screen items-center justify-center">
+<div class="flex flex-wrap bg-gray-200 min-h-screen items-center justify-center">
   {#each $cardsMain as cardMain}
     <div>
       <!-- <CardsMain title={cardMain.title} foto={cardMain.foto} views={cardMain.views}/> -->
