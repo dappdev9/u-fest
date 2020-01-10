@@ -13,7 +13,7 @@
     }
 </style>
 
-<div class="bg-white border rounded-lg overflow-hidden w-64">
+<div class="bg-white border rounded-lg overflow-hidden w-64 h-350px">
     <img class="object-cover w-full" src={foto} alt={title}>
     <div class="p-4 ">
         <h3 class="text-gray-800 font-semibold text-lg leading-tight">{title}</h3>
