@@ -9,7 +9,7 @@
 
   const cardsMain = collectionData(cardsMainRef,"id").pipe(startWith([]));
 
-  console.log("cards: " + cardsMain[0]);
+  console.log("cards: " + cardsMain);
 </script>
 
 <style>

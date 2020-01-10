@@ -7,21 +7,26 @@
 </script>
 
 <style>
-
+    img {
+        width: 150px;
+        height: 100px;
+    }
 </style>
 
-<div>
+<div class="bg-white border rounded-lg overflow-hidden">
     <img src={foto} alt={title}>
-    <h3>{title}</h3>
-    <div>
+    <div class="p-6 ">
+        <h3>{title}</h3>
         <div>
-        Views: {views}
-        </div>
-        <div>
-        Participants: {participants}
-        </div>
-        <div>
-        Comments: {comments}
+            <div>
+            Views: {views}
+            </div>
+            <div>
+            Participants: {participants}
+            </div>
+            <div>
+            Comments: {comments}
+            </div>
         </div>
     </div>
 </div>
