@@ -1,6 +1,7 @@
 <script>
   import Tailwindcss from "./Tailwindcss.svelte";
   import Main from "./components/Main.svelte";
+  import Navbar from "./components/Navbar.svelte";
 
   import SignIn from "./components/SignIn.svelte";
 
@@ -17,6 +18,9 @@
 <Tailwindcss />
 
 <div class="antialiased text-gray-900">
+  <div>
+    <Navbar />
+  </div>
   <div class="flex">
 
     <Main />
