@@ -12,13 +12,14 @@
 </script>
 
 <style>
-
+.MainCards {
+  height: 250px;
+}
 </style>
 
 <div class="flex bg-gray-200 min-h-screen items-start justify-center">
   {#each $cardsMain as cardMain}
-    <div class="h-200px">
-      <!-- <CardsMain title={cardMain.title} foto={cardMain.foto} views={cardMain.views}/> -->
+    <div class="MainCards">
       <CardsMain {...cardMain}/>
     </div>
   {/each}

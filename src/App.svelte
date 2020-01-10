@@ -17,7 +17,7 @@
 <Tailwindcss />
 
 <div class="antialiased text-gray-900">
-  <div class="flex">
+  <div>
 
     <Main />
 
