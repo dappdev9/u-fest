@@ -9,7 +9,7 @@
 
   const cardsMain = collectionData(cardsMainRef,"id").pipe(startWith([]));
 
-  console.log("cards: " + cardsMain);
+  console.log("cards: " + cardsMain[0]);
 </script>
 
 <style>
@@ -19,7 +19,7 @@
 <div class="flex bg-gray-200 min-h-screen items-center justify-center">
   {#each $cardsMain as cardMain}
     <div>
-      <CardsMain title={cardsMain} foto={cardsMain.foto} views={cardsMain.views}/>
+      <CardsMain title={cardMain.title} foto={cardMain.foto} views={cardMain.views}/>
     </div>
   {/each}
 </div>
