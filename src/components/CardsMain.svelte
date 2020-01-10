@@ -15,7 +15,7 @@
 <div class="bg-white border rounded-lg overflow-hidden w-64">
     <img class="object-cover" src={foto} alt={title}>
     <div class="p-6 ">
-        <h3 class="font-semibold text-xl leading-tight">{title}</h3>
+        <h3 class="font-semibold text-lg leading-tight truncate">{title}</h3>
         <div class="mt-6">
             <div>
             Views: {views}
