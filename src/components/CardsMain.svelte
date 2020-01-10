@@ -14,13 +14,13 @@
 </style>
 
 <div class="bg-white border rounded-lg overflow-hidden w-64">
-    <img class="object-none w-full" src={foto} alt={title}>
+    <img class="object-cover w-full" src={foto} alt={title}>
     <div class="p-4 ">
-        <h3 class="font-semibold text-lg leading-tight">{title}</h3>
-        <div class="mt-4 text-sm text-gray-700">
+        <h3 class="text-gray-800 font-semibold text-lg leading-tight">{title}</h3>
+        <div class="mt-4 text-sm text-gray-700 text-justify">
             {desc}
         </div>
-        <div class="mt-6 text-teal-500 font-medium text-sm text-center tracking-wide">
+        <div class="mt-7 text-teal-500 font-medium text-sm text-center tracking-wide">
             <span>
                 <svg class="h-5 w-5 fill-current inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                     <path d="M.2 10a11 11 0 0 1 19.6 0A11 11 0 0 1 .2 10zm9.8 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
