@@ -13,7 +13,7 @@
 
 <style>
 .MainCards {
-  height: 250px;
+  height: 350px;
 }
 </style>
 
