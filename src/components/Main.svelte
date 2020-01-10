@@ -15,9 +15,9 @@
 
 </style>
 
-<div class="flex bg-gray-200 min-h-screen items-center justify-center">
+<div class="flex bg-gray-200 min-h-screen items-start justify-center">
   {#each $cardsMain as cardMain}
-    <div class="flex-auto">
+    <div class="h-64">
       <!-- <CardsMain title={cardMain.title} foto={cardMain.foto} views={cardMain.views}/> -->
       <CardsMain {...cardMain}/>
     </div>
