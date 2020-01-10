@@ -1,5 +1,6 @@
 <script>
     export let title;
+    export let desc;
     export let foto;
     export let views;
     export let participants;
@@ -15,17 +16,20 @@
 <div class="bg-white border rounded-lg overflow-hidden w-64">
     <img class="object-none w-full" src={foto} alt={title}>
     <div class="p-6 ">
-        <h3 class="font-semibold text-lg leading-tight truncate">{title}</h3>
+        <h3 class="font-semibold text-lg leading-tight">{title}</h3>
+        <div class="text-sm text-gray-700 truncate">
+            {desc}
+        </div>
         <div class="mt-6">
-            <div>
+            <span>
             Views: {views}
-            </div>
-            <div>
+            </span>
+            <span>
             Participants: {participants}
-            </div>
-            <div>
+            </span>
+            <span>
             Comments: {comments}
-            </div>
+            </span>
         </div>
     </div>
 </div>
