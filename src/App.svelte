@@ -1,14 +1,26 @@
 <script>
-  import Tailwindcss from "./Tailwindcss.svelte";
-  import Main from "./components/Main.svelte";
-  import Navbar from "./components/Navbar.svelte";
+import Tailwindcss from "./Tailwindcss.svelte";
+import Router from 'svelte-spa-router';
 
-  import SignIn from "./components/SignIn.svelte";
+import { loggedIn$ } from "./Firebase.js";
 
-  import { loggedIn$ } from "./Firebase.js";
+import Navbar from "./components/Navbar.svelte";
 
-  /* Make something more observable */
-  const user = loggedIn$;
+const user = loggedIn$;
+
+import Home from './views/Home.svelte';
+import About from './views/About.svelte';
+import NotFound from './views/NotFound.svelte';
+
+const routes = {
+        '/': Home,
+        '/about': About,
+        '*': NotFound
+    }
+
+export { routes }
+
+
 </script>
 
 <style>
@@ -21,9 +33,7 @@
   <div>
     <Navbar />
   </div>
-  <div class="flex">
-
-    <Main />
-
+  <div>
+    <Router {routes}/>
   </div>
 </div>
